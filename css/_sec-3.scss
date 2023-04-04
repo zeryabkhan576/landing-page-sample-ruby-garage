@@ -1,0 +1,144 @@
+$header-bg-color: #0040c0;
+#sec-3 {
+  width: 1282px;
+  position: absolute;
+  height: 680px;
+  top: 610px;
+}
+.pics-container {
+  display: flex;
+  margin: 0 auto;
+}
+.before-pic-text {
+  color: white;
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 10;
+  }
+}
+.after-pic-text {
+  p {
+    color: gray;
+  }
+  h1 {
+    color: rgba(0, 0, 0, 0.678);
+  }
+}
+.pic-1 {
+  max-width: 25%;
+  padding: 40px;
+  text-align: center;
+}
+.pic-2 {
+  max-width: 25%;
+  text-align: center;
+  padding: 40px;
+}
+.pic-3 {
+  max-width: 25%;
+  text-align: center;
+  padding: 40px;
+}
+.img-1 img {
+  height: 300px;
+  width: 300px;
+  transition: width 0.1s;
+  &:hover {
+    width: 320px;
+  }
+}
+.img-3 img {
+  height: 300px;
+  width: 300px;
+  transition: width 0.1s;
+  overflow: -moz-hidden-unscrollable;
+  &:hover {
+    width: 320px;
+  }
+}
+.img-2 img {
+  height: 300px;
+  width: 300px;
+  transition: width 0.1s;
+  &:hover {
+    width: 320px;
+  }
+}
+
+.img-1 {
+  background-image: linear-gradient(180deg, #2e3437, #1e2225);
+}
+.img-2 {
+  background-color: #2162d3;
+}
+.img-3 {
+  background-image: linear-gradient(180deg, #2e3437, #1e2225);
+}
+.button {
+  display: inline block;
+  text-decoration: none;
+  padding: 20px;
+  background-color: white;
+  border-radius: 40px;
+  position: absolute;
+  top: 749px;
+  left: 490px;
+  color: $header-bg-color;
+  border: 1px solid $header-bg-color;
+}
+.button:hover {
+  background-color: $button-hover;
+  color: white;
+}
+
+.button::after {
+  content: "->";
+}
+
+@media screen and (max-width: 768px) {
+  #sec-3 {
+    width: 100%;
+    position: absolute;
+    height: 9999px;
+    top: 670px;
+  }
+  .pics-container {
+    display: unset;
+  }
+  .before-pic-text {
+    color: black;
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  .after-pic-text {
+    p {
+      font-size: 0.7rem;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+  }
+  .pic-1 {
+    max-width: 80%;
+    padding: 40px;
+  }
+  .pic-2 {
+    max-width: 80%;
+    padding: 40px;
+  }
+  .pic-3 {
+    max-width: 80%;
+    padding: 40px;
+  }
+  .button {
+    top: 1750px;
+    left: 80px;
+    padding: 5px;
+  }
+}

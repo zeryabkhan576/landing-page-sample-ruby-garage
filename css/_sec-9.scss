@@ -1,0 +1,150 @@
+$bg-color: #0040c0;
+$font-color: white;
+#sec-9 {
+  width: 1282px;
+  position: absolute;
+  height: 600px;
+  top: 6200px;
+}
+.projects-container {
+  .top-text {
+    margin: auto;
+    max-width: 80%;
+    text-align: center;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .background {
+    height: 400px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 300px;
+    z-index: -9;
+  }
+  .picture-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-top: 60px;
+
+    .container {
+      position: relative;
+      width: 25%;
+      height: 250px;
+      background-color: black;
+      color: white;
+      margin: 20px;
+      h1 {
+        text-align: center;
+        margin-top: 100px;
+      }
+      h1::before {
+        content: "  ";
+        position: relative;
+        top: 10px;
+        left: -28px;
+        width: 8px;
+        height: 8px;
+        background: linear-gradient(207deg, #503d9b, #7caae7);
+
+        z-index: 1;
+      }
+    }
+
+    .image {
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      top: 200px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: $bg-color;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 17px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #sec-9 {
+    width: 100%;
+    top: 9070px;
+  }
+
+  .projects-container {
+    .top-text {
+      max-width: 95%;
+      text-align: left;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .background {
+      height: 2700px;
+      width: 100%;
+      background-color: whitesmoke;
+      position: absolute;
+      top: 10px;
+      z-index: -9;
+    }
+    .picture-grid {
+      display: unset;
+      flex-wrap: unset;
+      margin-left: 0px;
+      margin-top: 0px;
+
+      .container {
+        position: relative;
+        width: 95%;
+        height: 380px;
+        background-color: black;
+        color: white;
+        margin: 10px;
+        h1 {
+          text-align: center;
+          margin-top: 20px;
+          position: relative;
+          top: 150px;
+          font-size: 2rem;
+        }
+      }
+
+      .image {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        top: 330px;
+      }
+    }
+  }
+}

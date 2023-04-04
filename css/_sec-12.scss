@@ -1,0 +1,24 @@
+$bg-color: #0040c0;
+$font-color: white;
+#sec-12 {
+  width: 1282px;
+  position: absolute;
+  height: 100px;
+  top: 8500px;
+  border-top: 1px solid lightgrey;
+}
+
+.footer-1 {
+  .social-list {
+    display: flex;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #sec-12 {
+    width: 100%;
+    top: 14000px;
+    border-top: 1px solid lightgrey;
+    background-color: $bg-color;
+  }
+}

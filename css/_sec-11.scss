@@ -1,0 +1,233 @@
+$bg-color: #0040c0;
+$font-color: white;
+#sec-11 {
+  width: 1282px;
+  position: absolute;
+  height: 600px;
+  top: 7500px;
+}
+.form-container {
+  .head-text {
+    margin-bottom: 100px;
+    text-align: center;
+    h1 {
+      font-size: 35px;
+    }
+  }
+  .blue-white {
+    display: flex;
+
+    .blue-box {
+      background-color: $bg-color;
+      width: 50%;
+      margin-left: 35px;
+      height: 700px;
+      text-align: center;
+      h1 {
+        color: white;
+        padding: 10px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+      }
+      .button {
+        display: inline block;
+        text-decoration: none;
+        padding: 20px;
+        background-color: white;
+        border-radius: 40px;
+        position: absolute;
+        top: 750px;
+        left: 250px;
+        color: $header-bg-color;
+        border: 1px solid $header-bg-color;
+      }
+      .button:hover {
+        background-color: $button-hover;
+        color: white;
+      }
+
+      .button::after {
+        content: "->";
+      }
+
+      .form {
+        .form-text {
+          background: transparent;
+          width: 453px;
+          height: 50px;
+
+          margin-top: 15px;
+          border-bottom: 1px solid grey;
+          border: none;
+          border-bottom: 1px solid grey;
+          padding: 5px;
+          color: white;
+          &::placeholder {
+            color: white;
+          }
+        }
+        .container {
+          display: block;
+          position: relative;
+          left: 90px;
+          top: 50px;
+          cursor: pointer;
+          font-size: 22px;
+          user-select: none;
+          p {
+            color: white;
+            left: 0px;
+            width: 210px;
+            font-size: 15px;
+          }
+        }
+
+        .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: transparent;
+          border: 1px solid white;
+        }
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        .container input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .container .checkmark:after {
+          left: 9px;
+          top: 5px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+    .white-box {
+      background-color: whitesmoke;
+      width: 40%;
+      height: 700px;
+      margin-left: 35px;
+
+      h1 {
+        font-size: 30px;
+        padding: 50px;
+        padding-bottom: 10px;
+        #blue-bold {
+          color: blue;
+        }
+      }
+      ol {
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-left: 0;
+        list-style: none;
+        counter-reset: item;
+        li {
+          opacity: 0.8;
+          font-size: 17px;
+          font-weight: 300;
+          line-height: 1.86;
+          padding: 10px;
+          margin-left: 20px;
+        }
+        li::before {
+          content: counter(item) "";
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 32px;
+          height: 32px;
+          border-radius: 100%;
+          background: rgba(0, 0, 0, 0.17);
+          color: #fff;
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 32px;
+          text-align: center;
+          counter-increment: item;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #sec-11 {
+    width: 100%;
+    top: 12450px;
+  }
+
+  .form-container {
+    .head-text {
+      margin-bottom: 100px;
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .blue-white {
+      display: unset;
+
+      .blue-box {
+        width: 95%;
+        margin-left: 10px;
+        h1 {
+          font-size: 1.3rem;
+          padding-top: 30px;
+        }
+        .button {
+          padding: 15px;
+          top: 770px;
+          left: 120px;
+        }
+
+        .form {
+          .form-text {
+            width: 90%;
+          }
+        }
+      }
+      .white-box {
+        width: 95%;
+        margin-left: 10px;
+
+        h1 {
+          font-size: 2rem;
+          padding-bottom: 10px;
+        }
+        ol {
+          li {
+            font-size: 1rem;
+            line-height: 2rem;
+            padding: 10px;
+            margin-left: 10px;
+          }
+          li::before {
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}

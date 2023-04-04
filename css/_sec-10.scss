@@ -1,0 +1,119 @@
+$bg-color: #0040c0;
+$font-color: white;
+#sec-10 {
+  width: 1282px;
+  position: absolute;
+  height: 500px;
+  top: 7000px;
+}
+.clients-container {
+  .our-clients {
+    text-align: center;
+    margin-bottom: 70px;
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .one-time {
+    margin: auto;
+  }
+  .item {
+    .head-pic {
+      display: flex;
+      .img {
+        img {
+          height: 60px;
+          width: 60px;
+          border-radius: 100px;
+        }
+      }
+      .heading {
+        h1 {
+          font-size: 20px;
+          padding-left: 20px;
+
+          margin-top: 0px;
+        }
+        h3 {
+          font-size: 15px;
+          color: grey;
+          margin-top: 0px;
+          padding-left: 20px;
+        }
+      }
+    }
+    .details {
+      p {
+        color: gray;
+        padding: 5px;
+        margin-left: 75px;
+      }
+    }
+  }
+  .button {
+    display: inline block;
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    top: 350px;
+    left: 550px;
+    color: $header-bg-color;
+    border: 1px solid $header-bg-color;
+  }
+  .button:hover {
+    background-color: $button-hover;
+    color: white;
+  }
+
+  .button::after {
+    content: "->";
+  }
+}
+@media screen and (max-width: 768px) {
+  #sec-10 {
+    width: 100%;
+    top: 11790px;
+  }
+  .clients-container {
+    .our-clients {
+      text-align: center;
+      margin-bottom: 50px;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .item {
+      .head-pic {
+        display: flex;
+        .img {
+          img {
+            height: 80px;
+            width: 80px;
+          }
+        }
+        .heading {
+          h1 {
+            font-size: 1rem;
+            padding-left: 20px;
+          }
+          h3 {
+            font-size: 15px;
+          }
+        }
+      }
+      .details {
+        p {
+          padding: 2px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .button {
+      padding: 10px;
+      top: 580px;
+      left: 100px;
+    }
+  }
+}

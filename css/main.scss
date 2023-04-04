@@ -1,0 +1,39 @@
+@import "header";
+@import "sec-2";
+@import "sec-3";
+@import "sec-4";
+@import "sec-5";
+@import "sec-6";
+@import "sec-7";
+@import "sec-8";
+@import "sec-9";
+@import "sec-10";
+@import "sec-11";
+@import "sec-12";
+@import "sec-13";
+@import "sec-14";
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.body-wrapper {
+  max-width: 1282px;
+  margin: 0 auto;
+  width: 1282px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .body-wrapper {
+    max-width: 1282px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}

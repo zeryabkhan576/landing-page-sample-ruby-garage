@@ -1,0 +1,175 @@
+$header-bg-color: #0040c0;
+$button-hover: #56058d;
+
+#sec-2 {
+  width: 1282px;
+  position: absolute;
+  height: 680px;
+}
+
+.intro-container-left {
+  height: 641px;
+  width: 50%;
+}
+.intro-container-right {
+  widows: 50%;
+  position: absolute;
+  right: 92px;
+  p {
+    color: white;
+    position: absolute;
+    top: 296px;
+    font-size: 21px;
+  }
+}
+
+.intro-container {
+  background-color: $header-bg-color;
+  display: flex;
+  height: 680px;
+}
+.intro-container-left {
+  h1 {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 130px;
+  }
+  .button {
+    display: inline block;
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    top: 450px;
+    left: 180px;
+    color: $header-bg-color;
+  }
+  .button:hover {
+    background-color: $button-hover;
+    color: white;
+  }
+
+  .button::after {
+    content: "->";
+  }
+  #tagline-line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-top: 10px;
+    margin-right: 8px;
+    background-color: lightgrey;
+  }
+  p {
+    color: lightgrey;
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    font-size: 20px;
+  }
+}
+#bold {
+  font-weight: bolder;
+  font-size: 45px;
+}
+#bold-2 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  #sec-2 {
+    width: 100%;
+    position: absolute;
+    height: 600px;
+  }
+
+  .intro-container-right {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    width: 100%;
+
+    p {
+      color: white;
+      position: absolute;
+      top: 450px;
+      font-size: 1rem;
+      right: 40px;
+    }
+    img {
+      width: 350px;
+      height: 500px;
+      z-index: -99;
+    }
+  }
+
+  .intro-container {
+    background-color: $header-bg-color;
+    display: flex;
+    height: 640px;
+  }
+  .intro-container-left {
+    height: 640px;
+    width: 100%;
+    h1 {
+      color: white;
+      padding: 10px;
+      font-size: 2rem;
+      position: absolute;
+      margin-top: 130px;
+      margin-left: 3px;
+      z-index: 1;
+    }
+    .button {
+      display: inline block;
+      text-decoration: none;
+      padding: 10px;
+      background-color: white;
+      border-radius: 40px;
+      position: absolute;
+      top: 350px;
+      left: 10px;
+      color: $header-bg-color;
+      z-index: 1;
+    }
+    .button:hover {
+      background-color: $button-hover;
+      color: white;
+    }
+
+    .button::after {
+      content: "->";
+    }
+    #tagline-line {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin-top: 10px;
+      margin-right: 8px;
+      background-color: lightgrey;
+    }
+    p {
+      color: lightgrey;
+      display: flex;
+      position: absolute;
+      top: 25px;
+      left: 80px;
+      font-size: 1rem;
+      z-index: 1;
+    }
+  }
+  #bold {
+    font-weight: bolder;
+    font-size: 2.5rem;
+  }
+  #bold-2 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+}
